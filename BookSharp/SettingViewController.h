@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingViewController : UIViewController
+@interface SettingViewController : UIViewController 
 
 
 @property (nonatomic,assign) float sysVersion;
+
+
+//单双页分段控件触发事件
+-(void)segControlChange:(id)sender;
+//动画分段控件触发事件
+-(void)AniSegControlChange:(id)sender;
+
 
 @end

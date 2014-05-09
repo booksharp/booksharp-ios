@@ -45,10 +45,34 @@
 		75A41B2B19176436002899B3 /* 0298.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B2919176436002899B3 /* 0298.png */; };
 		75A41B2D191765CC002899B3 /* 0029.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B2C191765CC002899B3 /* 0029.png */; };
 		75A41B2E191765CC002899B3 /* 0029.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B2C191765CC002899B3 /* 0029.png */; };
-		75A41B3319176D29002899B3 /* ShelfBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B3219176D29002899B3 /* ShelfBG.jpg */; };
-		75A41B3419176D29002899B3 /* ShelfBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B3219176D29002899B3 /* ShelfBG.jpg */; };
 		75A41B36191780C2002899B3 /* tonbo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B35191780C2002899B3 /* tonbo.png */; };
 		75A41B37191780C2002899B3 /* tonbo.png in Resources */ = {isa = PBXBuildFile; fileRef = 75A41B35191780C2002899B3 /* tonbo.png */; };
+		75AA40E2191B8819005BA8A1 /* buttonBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AA40E0191B8819005BA8A1 /* buttonBG.png */; };
+		75AA40E3191B8819005BA8A1 /* buttonBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AA40E0191B8819005BA8A1 /* buttonBG.png */; };
+		75AA40E4191B8819005BA8A1 /* TFBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AA40E1191B8819005BA8A1 /* TFBG.png */; };
+		75AA40E5191B8819005BA8A1 /* TFBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AA40E1191B8819005BA8A1 /* TFBG.png */; };
+		75AA40E7191B8D92005BA8A1 /* LoginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AA40E6191B8D92005BA8A1 /* LoginBG.png */; };
+		75AA40E8191B8D92005BA8A1 /* LoginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AA40E6191B8D92005BA8A1 /* LoginBG.png */; };
+		75AB4E10191C5F1500896B77 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AB4E0F191C5F1500896B77 /* BG.png */; };
+		75AB4E11191C5F1500896B77 /* BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 75AB4E0F191C5F1500896B77 /* BG.png */; };
+		75AB4E13191C65C700896B77 /* ShelfBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75AB4E12191C65C700896B77 /* ShelfBG.jpg */; };
+		75AB4E14191C65C700896B77 /* ShelfBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75AB4E12191C65C700896B77 /* ShelfBG.jpg */; };
+		75C3093019186E9800A15E9E /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C3092E19186E9800A15E9E /* WelcomeViewController.m */; };
+		75C3093119186E9800A15E9E /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C3092F19186E9800A15E9E /* WelcomeViewController.xib */; };
+		75C30936191875B800A15E9E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30932191875B800A15E9E /* 1.jpg */; };
+		75C30937191875B800A15E9E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30932191875B800A15E9E /* 1.jpg */; };
+		75C30938191875B800A15E9E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30933191875B800A15E9E /* 2.jpg */; };
+		75C30939191875B800A15E9E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30933191875B800A15E9E /* 2.jpg */; };
+		75C3093A191875B800A15E9E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30934191875B800A15E9E /* 3.jpg */; };
+		75C3093B191875B800A15E9E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30934191875B800A15E9E /* 3.jpg */; };
+		75C3093C191875B800A15E9E /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30935191875B800A15E9E /* 4.jpg */; };
+		75C3093D191875B800A15E9E /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C30935191875B800A15E9E /* 4.jpg */; };
+		75C3093F19187E7200A15E9E /* btnBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C3093E19187E7200A15E9E /* btnBG.jpg */; };
+		75C3094019187E7200A15E9E /* btnBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75C3093E19187E7200A15E9E /* btnBG.jpg */; };
+		75C3094E1918931B00A15E9E /* XLCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C3094D1918931B00A15E9E /* XLCycleScrollView.m */; };
+		75C3094F1918931B00A15E9E /* XLCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C3094D1918931B00A15E9E /* XLCycleScrollView.m */; };
+		75C309561918B27300A15E9E /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C309551918B27300A15E9E /* ItemViewController.m */; };
+		75C309571918B27300A15E9E /* ItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C309551918B27300A15E9E /* ItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,8 +125,24 @@
 		75A41B2319176424002899B3 /* 0021.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0021.png; sourceTree = "<group>"; };
 		75A41B2919176436002899B3 /* 0298.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0298.png; sourceTree = "<group>"; };
 		75A41B2C191765CC002899B3 /* 0029.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0029.png; sourceTree = "<group>"; };
-		75A41B3219176D29002899B3 /* ShelfBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ShelfBG.jpg; sourceTree = "<group>"; };
 		75A41B35191780C2002899B3 /* tonbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tonbo.png; sourceTree = "<group>"; };
+		75AA40E0191B8819005BA8A1 /* buttonBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonBG.png; sourceTree = "<group>"; };
+		75AA40E1191B8819005BA8A1 /* TFBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TFBG.png; sourceTree = "<group>"; };
+		75AA40E6191B8D92005BA8A1 /* LoginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBG.png; sourceTree = "<group>"; };
+		75AB4E0F191C5F1500896B77 /* BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BG.png; sourceTree = "<group>"; };
+		75AB4E12191C65C700896B77 /* ShelfBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ShelfBG.jpg; sourceTree = "<group>"; };
+		75C3092D19186E9800A15E9E /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		75C3092E19186E9800A15E9E /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		75C3092F19186E9800A15E9E /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		75C30932191875B800A15E9E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		75C30933191875B800A15E9E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		75C30934191875B800A15E9E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		75C30935191875B800A15E9E /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		75C3093E19187E7200A15E9E /* btnBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = btnBG.jpg; sourceTree = "<group>"; };
+		75C3094C1918931B00A15E9E /* XLCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCycleScrollView.h; sourceTree = "<group>"; };
+		75C3094D1918931B00A15E9E /* XLCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCycleScrollView.m; sourceTree = "<group>"; };
+		75C309541918B27300A15E9E /* ItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemViewController.h; sourceTree = "<group>"; };
+		75C309551918B27300A15E9E /* ItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +172,8 @@
 		756B173E1916447C006BB927 = {
 			isa = PBXGroup;
 			children = (
+				756B177919164485006BB927 /* View */,
+				756B177B1916449A006BB927 /* Resources */,
 				756B17501916447C006BB927 /* BookSharp */,
 				756B17691916447C006BB927 /* BookSharpTests */,
 				756B17491916447C006BB927 /* Frameworks */,
@@ -163,8 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				756B177A19164491006BB927 /* Manager */,
-				756B177919164485006BB927 /* View */,
-				756B177B1916449A006BB927 /* Resources */,
 				756B17591916447C006BB927 /* BookSharpAppDelegate.h */,
 				756B175A1916447C006BB927 /* BookSharpAppDelegate.m */,
 				756B175C1916447C006BB927 /* Images.xcassets */,
@@ -205,18 +245,17 @@
 		756B177919164485006BB927 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				75A41ADF191720F3002899B3 /* ShelfViewController.h */,
-				75A41AE0191720F3002899B3 /* ShelfViewController.m */,
-				75A41AE4191721ED002899B3 /* BookShopViewController.h */,
-				75A41AE5191721ED002899B3 /* BookShopViewController.m */,
-				75A41AE919172282002899B3 /* UserViewController.h */,
-				75A41AEA19172282002899B3 /* UserViewController.m */,
-				75A41AEE1917229B002899B3 /* SettingViewController.h */,
-				75A41AEF1917229B002899B3 /* SettingViewController.m */,
-				75A41ADA19172095002899B3 /* LoginViewController.h */,
-				75A41ADB19172095002899B3 /* LoginViewController.m */,
+				75C3092C19186E7500A15E9E /* 用户指南 */,
+				75C3092B19186E6200A15E9E /* 登录/注册 */,
+				75C3092A19186E4B00A15E9E /* 设定 */,
+				75C3092919186E3F00A15E9E /* 账户 */,
+				75C3092819186E2000A15E9E /* 书店 */,
+				75C3092719186E0E00A15E9E /* 书架 */,
+				75C309541918B27300A15E9E /* ItemViewController.h */,
+				75C309551918B27300A15E9E /* ItemViewController.m */,
 			);
 			name = View;
+			path = BookSharp;
 			sourceTree = "<group>";
 		};
 		756B177A19164491006BB927 /* Manager */ = {
@@ -229,16 +268,27 @@
 		756B177B1916449A006BB927 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				75C3094B1918926100A15E9E /* 代码类库 */,
 				756B178219164505006BB927 /* xib */,
 				756B177C191644AA006BB927 /* Image */,
 			);
 			name = Resources;
+			path = BookSharp;
 			sourceTree = "<group>";
 		};
 		756B177C191644AA006BB927 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				75A41B3219176D29002899B3 /* ShelfBG.jpg */,
+				75AB4E12191C65C700896B77 /* ShelfBG.jpg */,
+				75AA40E6191B8D92005BA8A1 /* LoginBG.png */,
+				75AB4E0F191C5F1500896B77 /* BG.png */,
+				75C30932191875B800A15E9E /* 1.jpg */,
+				75AA40E0191B8819005BA8A1 /* buttonBG.png */,
+				75AA40E1191B8819005BA8A1 /* TFBG.png */,
+				75C30933191875B800A15E9E /* 2.jpg */,
+				75C30934191875B800A15E9E /* 3.jpg */,
+				75C30935191875B800A15E9E /* 4.jpg */,
+				75C3093E19187E7200A15E9E /* btnBG.jpg */,
 				75A41B35191780C2002899B3 /* tonbo.png */,
 				75A41B2C191765CC002899B3 /* 0029.png */,
 				75A41B2919176436002899B3 /* 0298.png */,
@@ -256,12 +306,76 @@
 			isa = PBXGroup;
 			children = (
 				75A41AE1191720F3002899B3 /* ShelfViewController.xib */,
+				75C3092F19186E9800A15E9E /* WelcomeViewController.xib */,
 				75A41AE6191721ED002899B3 /* BookShopViewController.xib */,
 				75A41AEB19172282002899B3 /* UserViewController.xib */,
 				75A41AF01917229B002899B3 /* SettingViewController.xib */,
 				75A41ADC19172095002899B3 /* LoginViewController.xib */,
 			);
 			name = xib;
+			sourceTree = "<group>";
+		};
+		75C3092719186E0E00A15E9E /* 书架 */ = {
+			isa = PBXGroup;
+			children = (
+				75A41ADF191720F3002899B3 /* ShelfViewController.h */,
+				75A41AE0191720F3002899B3 /* ShelfViewController.m */,
+			);
+			name = "书架";
+			sourceTree = "<group>";
+		};
+		75C3092819186E2000A15E9E /* 书店 */ = {
+			isa = PBXGroup;
+			children = (
+				75A41AE4191721ED002899B3 /* BookShopViewController.h */,
+				75A41AE5191721ED002899B3 /* BookShopViewController.m */,
+			);
+			name = "书店";
+			sourceTree = "<group>";
+		};
+		75C3092919186E3F00A15E9E /* 账户 */ = {
+			isa = PBXGroup;
+			children = (
+				75A41AE919172282002899B3 /* UserViewController.h */,
+				75A41AEA19172282002899B3 /* UserViewController.m */,
+			);
+			name = "账户";
+			sourceTree = "<group>";
+		};
+		75C3092A19186E4B00A15E9E /* 设定 */ = {
+			isa = PBXGroup;
+			children = (
+				75A41AEE1917229B002899B3 /* SettingViewController.h */,
+				75A41AEF1917229B002899B3 /* SettingViewController.m */,
+			);
+			name = "设定";
+			sourceTree = "<group>";
+		};
+		75C3092B19186E6200A15E9E /* 登录/注册 */ = {
+			isa = PBXGroup;
+			children = (
+				75A41ADA19172095002899B3 /* LoginViewController.h */,
+				75A41ADB19172095002899B3 /* LoginViewController.m */,
+			);
+			name = "登录/注册";
+			sourceTree = "<group>";
+		};
+		75C3092C19186E7500A15E9E /* 用户指南 */ = {
+			isa = PBXGroup;
+			children = (
+				75C3092D19186E9800A15E9E /* WelcomeViewController.h */,
+				75C3092E19186E9800A15E9E /* WelcomeViewController.m */,
+			);
+			name = "用户指南";
+			sourceTree = "<group>";
+		};
+		75C3094B1918926100A15E9E /* 代码类库 */ = {
+			isa = PBXGroup;
+			children = (
+				75C3094C1918931B00A15E9E /* XLCycleScrollView.h */,
+				75C3094D1918931B00A15E9E /* XLCycleScrollView.m */,
+			);
+			name = "代码类库";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,21 +454,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AA40E4191B8819005BA8A1 /* TFBG.png in Resources */,
+				75C3093C191875B800A15E9E /* 4.jpg in Resources */,
 				75A41AED19172282002899B3 /* UserViewController.xib in Resources */,
+				75AA40E7191B8D92005BA8A1 /* LoginBG.png in Resources */,
+				75C30936191875B800A15E9E /* 1.jpg in Resources */,
+				75C30938191875B800A15E9E /* 2.jpg in Resources */,
+				75AB4E10191C5F1500896B77 /* BG.png in Resources */,
 				75A41ADE19172095002899B3 /* LoginViewController.xib in Resources */,
 				75A41B2419176424002899B3 /* 0021.png in Resources */,
 				756B17551916447C006BB927 /* InfoPlist.strings in Resources */,
 				756B175D1916447C006BB927 /* Images.xcassets in Resources */,
-				75A41B3319176D29002899B3 /* ShelfBG.jpg in Resources */,
 				75A41B15191742D1002899B3 /* kaya.png in Resources */,
+				75AB4E13191C65C700896B77 /* ShelfBG.jpg in Resources */,
 				75A41B2D191765CC002899B3 /* 0029.png in Resources */,
 				75A41B1E19174327002899B3 /* fune.png in Resources */,
 				75A41B18191742ED002899B3 /* hanaguruma.png in Resources */,
+				75AA40E2191B8819005BA8A1 /* buttonBG.png in Resources */,
+				75C3093A191875B800A15E9E /* 3.jpg in Resources */,
 				75A41AE3191720F3002899B3 /* ShelfViewController.xib in Resources */,
+				75C3093119186E9800A15E9E /* WelcomeViewController.xib in Resources */,
 				75A41B1B19174308002899B3 /* maru.png in Resources */,
 				75A41AE8191721ED002899B3 /* BookShopViewController.xib in Resources */,
 				75A41B2119176417002899B3 /* 0300.png in Resources */,
 				75A41B2A19176436002899B3 /* 0298.png in Resources */,
+				75C3093F19187E7200A15E9E /* btnBG.jpg in Resources */,
 				75A41B36191780C2002899B3 /* tonbo.png in Resources */,
 				75A41AF21917229B002899B3 /* SettingViewController.xib in Resources */,
 			);
@@ -366,15 +490,24 @@
 			files = (
 				75A41B19191742ED002899B3 /* hanaguruma.png in Resources */,
 				75A41B2B19176436002899B3 /* 0298.png in Resources */,
+				75AA40E5191B8819005BA8A1 /* TFBG.png in Resources */,
 				75A41B37191780C2002899B3 /* tonbo.png in Resources */,
+				75C3093D191875B800A15E9E /* 4.jpg in Resources */,
 				75A41B2E191765CC002899B3 /* 0029.png in Resources */,
-				75A41B3419176D29002899B3 /* ShelfBG.jpg in Resources */,
+				75AA40E3191B8819005BA8A1 /* buttonBG.png in Resources */,
+				75AA40E8191B8D92005BA8A1 /* LoginBG.png in Resources */,
+				75C3094019187E7200A15E9E /* btnBG.jpg in Resources */,
+				75C3093B191875B800A15E9E /* 3.jpg in Resources */,
 				756B176E1916447C006BB927 /* InfoPlist.strings in Resources */,
 				75A41B1C19174308002899B3 /* maru.png in Resources */,
 				75A41B16191742D1002899B3 /* kaya.png in Resources */,
+				75AB4E14191C65C700896B77 /* ShelfBG.jpg in Resources */,
 				75A41B1F19174327002899B3 /* fune.png in Resources */,
+				75C30939191875B800A15E9E /* 2.jpg in Resources */,
+				75C30937191875B800A15E9E /* 1.jpg in Resources */,
 				75A41B2519176424002899B3 /* 0021.png in Resources */,
 				75A41B2219176417002899B3 /* 0300.png in Resources */,
+				75AB4E11191C5F1500896B77 /* BG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,8 +521,11 @@
 				75A41AEC19172282002899B3 /* UserViewController.m in Sources */,
 				756B175B1916447C006BB927 /* BookSharpAppDelegate.m in Sources */,
 				75A41AE7191721ED002899B3 /* BookShopViewController.m in Sources */,
+				75C3094E1918931B00A15E9E /* XLCycleScrollView.m in Sources */,
 				75A41AE2191720F3002899B3 /* ShelfViewController.m in Sources */,
+				75C309561918B27300A15E9E /* ItemViewController.m in Sources */,
 				756B17571916447C006BB927 /* main.m in Sources */,
+				75C3093019186E9800A15E9E /* WelcomeViewController.m in Sources */,
 				75A41ADD19172095002899B3 /* LoginViewController.m in Sources */,
 				75A41AF11917229B002899B3 /* SettingViewController.m in Sources */,
 			);
@@ -399,6 +535,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75C3094F1918931B00A15E9E /* XLCycleScrollView.m in Sources */,
+				75C309571918B27300A15E9E /* ItemViewController.m in Sources */,
 				756B17701916447C006BB927 /* BookSharpTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

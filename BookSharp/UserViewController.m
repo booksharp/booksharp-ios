@@ -50,6 +50,8 @@
         logOut.tintColor=[UIColor blackColor];
     }
     self.navigationItem.rightBarButtonItem=logOut;
+      
+    
     
 }
 

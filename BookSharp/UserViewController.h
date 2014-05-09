@@ -10,8 +10,6 @@
 
 @interface UserViewController : UIViewController
 
-
-
 @property (nonatomic,assign) float sysVersion;
 
 @end

@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShelfViewController : UIViewController
+
+
+@interface ShelfViewController : UIViewController<UIScrollViewDelegate>
 
 @property (nonatomic,assign) float sysVersion;
+//用户名-----这里需要封装个用户信息类
+@property (nonatomic,retain) NSString *userName;
 
+@property (nonatomic,retain) UIScrollView *scrollView;
+@property (nonatomic,retain) UIPageControl *pageControl;
+
+-(void)pageControlChange;
 
 @end

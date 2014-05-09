@@ -7,19 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-//四个主要分界面
-#import "ShelfViewController.h"
-#import "BookShopViewController.h"
-#import "UserViewController.h"
-#import "SettingViewController.h"
 
-
+//欢迎界面
+#import "WelcomeViewController.h"
+//注册登录界面
 #import "LoginViewController.h"
+
 @interface BookSharpAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+//版本记录
 @property (nonatomic,assign) float sysVersion;
-@property (nonatomic,retain) UITabBarController *bottomTab;
 
 @end
