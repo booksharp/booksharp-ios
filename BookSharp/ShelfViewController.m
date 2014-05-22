@@ -8,8 +8,6 @@
 
 #import "ShelfViewController.h"
 
-#define IPHONE7_BG_FRAME CGRectMake(0, 60, 320, 480);
-#define IPHONE6_BG_FRAME CGRectMake(0, 0, 320, 480);
 
 @interface ShelfViewController ()
 
@@ -45,8 +43,12 @@
 #pragma mark - 界面布局
 -(void)setLayout
 {
-    NSLog(@"%f-%f",self.view.frame.size.width,self.view.frame.size.height);
+    //NSLog(@"%f-%f",self.view.frame.size.width,self.view.frame.size.height);
    
+    NSLog(@"%f",[[UIScreen mainScreen] bounds].size.height);
+    self.view.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin |UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin |  UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+   
+    
     //导航标题
     self.navigationItem.title=[self.userName stringByAppendingString:@"的书架1"];
     //退出按钮
@@ -58,7 +60,7 @@
      设置滚动视图
      */
     // 实例化并设置区域
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:BG_FRAME];
     // 开启分页属性
     [self.scrollView setPagingEnabled:YES];
     // 关闭水平滚动指示器
@@ -71,23 +73,22 @@
     self.scrollView.delegate = self;
     
     
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    UIImageView *imgView = [[UIImageView alloc] initWithFrame:BOOKSHELF_IMAGE_1_FRAME];
     [imgView setImage:[UIImage imageNamed:@"ShelfBG.jpg"]];
     [self.scrollView addSubview:imgView];
 
-    UIImageView *imgView1 = [[UIImageView alloc] initWithFrame:CGRectMake(320, 0, 320, 480)];
+    UIImageView *imgView1 = [[UIImageView alloc] initWithFrame:BOOKSHELF_IMAGE_2_FRAME];
     [imgView1 setImage:[UIImage imageNamed:@"ShelfBG.jpg"]];
     [self.scrollView addSubview:imgView1];
 
-    UIImageView *imgView2 = [[UIImageView alloc] initWithFrame:CGRectMake(640, 0, 320, 480)];
+    UIImageView *imgView2 = [[UIImageView alloc] initWithFrame:BOOKSHELF_IMAGE_3_FRAME];
     [imgView2 setImage:[UIImage imageNamed:@"ShelfBG.jpg"]];
-    
     [self.scrollView addSubview:imgView2];
     
     
     // 实例化并设置区域
     self.pageControl = [[UIPageControl alloc] init];
-    self.pageControl.frame=CGRectMake(0, 410, 320, 30);
+    self.pageControl.frame=BOOKSHELF_PAGECONTROL_DEFAULT_FRAME;
     /*
      设置分页控制器
      */
@@ -110,12 +111,17 @@
     //低于7.0版本
     else
     {
-        self.pageControl.frame=CGRectMake(0, 345, 320, 30);
+        self.pageControl.frame=BOOKSHELF_PAGECONTROL_NEW_FRAME;
     }
     
     self.navigationItem.rightBarButtonItem=logOut;
+    
+    
+    
     [self.view addSubview:self.scrollView];
+    self.scrollView.autoresizingMask= UIViewAutoresizingFlexibleLeftMargin |UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin |  UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:self.pageControl];
+    self.pageControl.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin |UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin |  UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     
 }
 
@@ -145,7 +151,6 @@
     /*
      通过数学方法获取当前页数
      */
-    
     CGFloat width = self.scrollView.frame.size.width;
     
     int page = fabs(self.scrollView.contentOffset.x/width);

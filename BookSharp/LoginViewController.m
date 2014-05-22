@@ -41,7 +41,7 @@
 -(void)setLayout
 {
     
-    UIControl *control = [[UIControl alloc]initWithFrame:CGRectMake(0, 0, 320, 480)];
+    UIControl *control = [[UIControl alloc]initWithFrame:BG_FRAME];
     control.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"BG.png"]];
 
     self.imgView = [[UIImageView alloc]initWithFrame:CGRectMake(30, 130, 260, 185)];
@@ -81,6 +81,7 @@
     self.passField.clearsOnBeginEditing = YES;
     self.passField.clearButtonMode = UITextFieldViewModeWhileEditing;
     self.passField.keyboardType = UIKeyboardTypeDefault;
+    self.passField.secureTextEntry=YES;
     self.passField.tag = 2;
     self.passField.delegate = self;
     [self.imgView addSubview:self.passField];
@@ -100,7 +101,6 @@
     [registration setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     registration.titleLabel.font = [UIFont systemFontOfSize: 16.0];
     [self.imgView addSubview:registration];
-
 
 
     //3.5寸7.0以上版本
@@ -147,7 +147,7 @@
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
     //判断是否需要上移frame
-    if ([textField tag] == 2)
+    if ([textField tag] == 2&&DEVICE_FRAME_HEIGHT!=568)
     {
         [UIView beginAnimations:@"appear" context:nil];
         [UIView setAnimationDuration:0.5f];
@@ -168,53 +168,72 @@
     [textField resignFirstResponder];
 }
 
-
-#pragma mark - 判断是否需要上移frame
--(void)isMoveFrame
-{
-    if(self.view.frame.origin.y!=0)
-    {
-        self.isMove=NO;
-    }
-    else
-        self.isMove=YES;
-}
-
 #pragma mark - 登录按钮触发方法
 -(void)loginBtnPress
 {
     
-    if ([[self removespace:_userField]isEqualToString:@""]||[[self removespace:_passField]isEqualToString:@""])
-    {
-        [self showInfo:@"提示" show_message:@"用户名或密码不能为空"];
-    }
-    else
-    {
+//    if ([[self removespace:_userField]isEqualToString:@""]||[[self removespace:_passField]isEqualToString:@""])
+//    {
+//        [self showInfo:@"提示" show_message:@"用户名或密码不能为空"];
+//    }
+//    else
+//    {
         NSString *userName=self.userField.text;
         NSString *passWord=self.passField.text;
-        if([userName isEqual:@"ll"])
-        {
-            if([passWord isEqual:@"123"])
-            {
+//        
+//        NSString *queryString = [NSString stringWithFormat:@"http://192.168.1.110/LoginWebService.asmx/LoginToSystem?userName=%@&password=%@",userName,passWord];
+//        NSURL *url = [NSURL URLWithString:queryString];
+//        NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+//        [req addValue:@"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+//        [req addValue:0 forHTTPHeaderField:@"Content-Length"];
+//        [req setHTTPMethod:@"GET"];
+//        //设置请求超时为1分钟
+//        [req setTimeoutInterval:60];
+//        
+//        NSError *error = nil;
+//        
+//        NSHTTPURLResponse * response = nil;
+//        NSData   *data = [NSURLConnection sendSynchronousRequest:req
+//                                               returningResponse:&response
+//                                                           error:&error];
+//        
+//        //错误信息代码
+//        int errorCode = error.code;
+//        
+//        if (errorCode == -1001) {
+//            NSLog(@"网络连接超时，请确认是否已经连入网络。");
+//            return;
+//        }
+//        
+//        if (data != nil){
+//            NSLog(@"response = %@",[NSHTTPURLResponse localizedStringForStatusCode: [response statusCode]]);
+//            
+//            NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//            NSLog(@"返回信息为：%@",jsonString);
+//            
+//            if(![@"null" isEqual:jsonString]){
+//                NSError *error;
+//                NSDictionary *loginInfoDic = [NSJSONSerialization JSONObjectWithData:data
+//                                                                             options:NSJSONReadingMutableContainers
+//                                                                               error:&error];
+//                NSDictionary *userInfo = [loginInfoDic objectForKey:@"Name"];
+//                NSLog(@"用户信息为[姓名：%@]",userInfo);
+//                
                 //登陆成功
                 //进入书架页面
                 ItemViewController *main=[[ItemViewController alloc]init];
                 [main passUserName:userName];
                 [self presentViewController:main animated:YES completion:nil];
                 
-            }
-            else
-            {
-                //密码错误
-                //···
-            }
-        }
-    else
-    {
-        //找不到该用户
-        //···
-    }
-    }
+//            }else{
+//                //登陆失败
+//                //···
+//            }
+//            
+//        }else {
+//            NSLog(@"%@", error);
+//        }
+//    }
 }
 
 #pragma mark - 注册按钮触发方法
