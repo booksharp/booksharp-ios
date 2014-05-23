@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ItemViewController.h"
+#import "RegisterViewController.h"
 #import "ViewFrame.h"
 
 @interface LoginViewController : UIViewController <UITextFieldDelegate>

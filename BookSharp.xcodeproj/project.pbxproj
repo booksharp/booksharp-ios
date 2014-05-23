@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		754A7237192EEC5300ED9EE2 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A7235192EEC5300ED9EE2 /* RegisterViewController.m */; };
+		754A7238192EEC5300ED9EE2 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A7235192EEC5300ED9EE2 /* RegisterViewController.m */; };
+		754A7239192EEC5300ED9EE2 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754A7236192EEC5300ED9EE2 /* RegisterViewController.xib */; };
+		754A723A192EEC5300ED9EE2 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 754A7236192EEC5300ED9EE2 /* RegisterViewController.xib */; };
+		754A7243192F1BF400ED9EE2 /* myHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A7241192F1BF400ED9EE2 /* myHttpRequest.m */; };
+		754A7244192F1BF400ED9EE2 /* myHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 754A7241192F1BF400ED9EE2 /* myHttpRequest.m */; };
 		756B174B1916447C006BB927 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B174A1916447C006BB927 /* Foundation.framework */; };
 		756B174D1916447C006BB927 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B174C1916447C006BB927 /* CoreGraphics.framework */; };
 		756B174F1916447C006BB927 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756B174E1916447C006BB927 /* UIKit.framework */; };
@@ -87,6 +93,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		754A7234192EEC5300ED9EE2 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		754A7235192EEC5300ED9EE2 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		754A7236192EEC5300ED9EE2 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		754A7240192F1BF400ED9EE2 /* myHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myHttpRequest.h; sourceTree = "<group>"; };
+		754A7241192F1BF400ED9EE2 /* myHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = myHttpRequest.m; sourceTree = "<group>"; };
+		754A7242192F1BF400ED9EE2 /* myHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myHttp.h; sourceTree = "<group>"; };
 		756B17471916447C006BB927 /* BookSharp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookSharp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756B174A1916447C006BB927 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		756B174C1916447C006BB927 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -171,6 +183,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		754A723B192F029A00ED9EE2 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				754A7240192F1BF400ED9EE2 /* myHttpRequest.h */,
+				754A7241192F1BF400ED9EE2 /* myHttpRequest.m */,
+				754A7242192F1BF400ED9EE2 /* myHttp.h */,
+			);
+			name = HTTP;
+			sourceTree = "<group>";
+		};
 		756B173E1916447C006BB927 = {
 			isa = PBXGroup;
 			children = (
@@ -247,12 +269,12 @@
 		756B177919164485006BB927 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				75C3092719186E0E00A15E9E /* 书架 */,
 				75C3092C19186E7500A15E9E /* 用户指南 */,
 				75C3092B19186E6200A15E9E /* 登录/注册 */,
 				75C3092A19186E4B00A15E9E /* 设定 */,
 				75C3092919186E3F00A15E9E /* 账户 */,
 				75C3092819186E2000A15E9E /* 书店 */,
-				75C3092719186E0E00A15E9E /* 书架 */,
 				75C309541918B27300A15E9E /* ItemViewController.h */,
 				75C309551918B27300A15E9E /* ItemViewController.m */,
 			);
@@ -309,6 +331,7 @@
 		756B178219164505006BB927 /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				754A7236192EEC5300ED9EE2 /* RegisterViewController.xib */,
 				75A41AE1191720F3002899B3 /* ShelfViewController.xib */,
 				75A41AE6191721ED002899B3 /* BookShopViewController.xib */,
 				75A41AEB19172282002899B3 /* UserViewController.xib */,
@@ -359,6 +382,8 @@
 			children = (
 				75A41ADA19172095002899B3 /* LoginViewController.h */,
 				75A41ADB19172095002899B3 /* LoginViewController.m */,
+				754A7234192EEC5300ED9EE2 /* RegisterViewController.h */,
+				754A7235192EEC5300ED9EE2 /* RegisterViewController.m */,
 			);
 			name = "登录/注册";
 			sourceTree = "<group>";
@@ -375,6 +400,7 @@
 		75C3094B1918926100A15E9E /* 代码类库 */ = {
 			isa = PBXGroup;
 			children = (
+				754A723B192F029A00ED9EE2 /* HTTP */,
 				75C3094C1918931B00A15E9E /* XLCycleScrollView.h */,
 				75C3094D1918931B00A15E9E /* XLCycleScrollView.m */,
 			);
@@ -462,6 +488,7 @@
 				75A41AED19172282002899B3 /* UserViewController.xib in Resources */,
 				75AA40E7191B8D92005BA8A1 /* LoginBG.png in Resources */,
 				75C30936191875B800A15E9E /* 1.jpg in Resources */,
+				754A7239192EEC5300ED9EE2 /* RegisterViewController.xib in Resources */,
 				75C30938191875B800A15E9E /* 2.jpg in Resources */,
 				75AB4E10191C5F1500896B77 /* BG.png in Resources */,
 				75A41ADE19172095002899B3 /* LoginViewController.xib in Resources */,
@@ -492,6 +519,7 @@
 			files = (
 				75A41B19191742ED002899B3 /* hanaguruma.png in Resources */,
 				75A41B2B19176436002899B3 /* 0298.png in Resources */,
+				754A723A192EEC5300ED9EE2 /* RegisterViewController.xib in Resources */,
 				75AA40E5191B8819005BA8A1 /* TFBG.png in Resources */,
 				75A41B37191780C2002899B3 /* tonbo.png in Resources */,
 				75C3093D191875B800A15E9E /* 4.jpg in Resources */,
@@ -524,9 +552,11 @@
 				756B175B1916447C006BB927 /* BookSharpAppDelegate.m in Sources */,
 				75A41AE7191721ED002899B3 /* BookShopViewController.m in Sources */,
 				75C3094E1918931B00A15E9E /* XLCycleScrollView.m in Sources */,
+				754A7243192F1BF400ED9EE2 /* myHttpRequest.m in Sources */,
 				75A41AE2191720F3002899B3 /* ShelfViewController.m in Sources */,
 				75C309561918B27300A15E9E /* ItemViewController.m in Sources */,
 				756B17571916447C006BB927 /* main.m in Sources */,
+				754A7237192EEC5300ED9EE2 /* RegisterViewController.m in Sources */,
 				75C3093019186E9800A15E9E /* WelcomeViewController.m in Sources */,
 				75B0D783192AE355004ACCFD /* ViewFrame.m in Sources */,
 				75A41ADD19172095002899B3 /* LoginViewController.m in Sources */,
@@ -538,6 +568,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754A7244192F1BF400ED9EE2 /* myHttpRequest.m in Sources */,
+				754A7238192EEC5300ED9EE2 /* RegisterViewController.m in Sources */,
 				75B0D784192AE355004ACCFD /* ViewFrame.m in Sources */,
 				75C3094F1918931B00A15E9E /* XLCycleScrollView.m in Sources */,
 				75C309571918B27300A15E9E /* ItemViewController.m in Sources */,

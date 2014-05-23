@@ -42,7 +42,7 @@
 {
     //导航标题
     self.navigationItem.title=@"设定";
-    //退出按钮
+//    //退出按钮
     UIBarButtonItem *logOut=[[UIBarButtonItem alloc]initWithTitle:@"退出" style:UIBarButtonItemStyleBordered target:self action:@selector(logout)];
     
     UIImageView *logoImage=[[UIImageView alloc]init];
@@ -148,7 +148,7 @@
 #pragma mark - 退出用户
 -(void)logout
 {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 #pragma mark - 控件触发方法
 //分段控件触发事件

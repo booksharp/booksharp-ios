@@ -100,6 +100,7 @@
     [registration setTitle:@"注册" forState:UIControlStateNormal];
     [registration setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     registration.titleLabel.font = [UIFont systemFontOfSize: 16.0];
+    [registration addTarget:self action:@selector(registerBtnPress) forControlEvents:UIControlEventTouchUpInside];
     [self.imgView addSubview:registration];
 
 
@@ -172,74 +173,76 @@
 -(void)loginBtnPress
 {
     
-//    if ([[self removespace:_userField]isEqualToString:@""]||[[self removespace:_passField]isEqualToString:@""])
-//    {
-//        [self showInfo:@"提示" show_message:@"用户名或密码不能为空"];
-//    }
-//    else
-//    {
+    if ([[self removespace:_userField]isEqualToString:@""]||[[self removespace:_passField]isEqualToString:@""])
+    {
+        [self showInfo:@"提示" show_message:@"用户名或密码不能为空"];
+    }
+    else
+    {
         NSString *userName=self.userField.text;
         NSString *passWord=self.passField.text;
-//        
-//        NSString *queryString = [NSString stringWithFormat:@"http://192.168.1.110/LoginWebService.asmx/LoginToSystem?userName=%@&password=%@",userName,passWord];
-//        NSURL *url = [NSURL URLWithString:queryString];
-//        NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
-//        [req addValue:@"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
-//        [req addValue:0 forHTTPHeaderField:@"Content-Length"];
-//        [req setHTTPMethod:@"GET"];
-//        //设置请求超时为1分钟
-//        [req setTimeoutInterval:60];
-//        
-//        NSError *error = nil;
-//        
-//        NSHTTPURLResponse * response = nil;
-//        NSData   *data = [NSURLConnection sendSynchronousRequest:req
-//                                               returningResponse:&response
-//                                                           error:&error];
-//        
-//        //错误信息代码
-//        int errorCode = error.code;
-//        
-//        if (errorCode == -1001) {
-//            NSLog(@"网络连接超时，请确认是否已经连入网络。");
-//            return;
-//        }
-//        
-//        if (data != nil){
-//            NSLog(@"response = %@",[NSHTTPURLResponse localizedStringForStatusCode: [response statusCode]]);
-//            
-//            NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//            NSLog(@"返回信息为：%@",jsonString);
-//            
-//            if(![@"null" isEqual:jsonString]){
-//                NSError *error;
-//                NSDictionary *loginInfoDic = [NSJSONSerialization JSONObjectWithData:data
-//                                                                             options:NSJSONReadingMutableContainers
-//                                                                               error:&error];
-//                NSDictionary *userInfo = [loginInfoDic objectForKey:@"Name"];
-//                NSLog(@"用户信息为[姓名：%@]",userInfo);
-//                
+        
+        NSString *queryString = [NSString stringWithFormat:@"http://192.168.1.110/LoginWebService.asmx/LoginToSystem?userName=%@&password=%@",userName,passWord];
+        NSURL *url = [NSURL URLWithString:queryString];
+        NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+        [req addValue:@"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+        [req addValue:0 forHTTPHeaderField:@"Content-Length"];
+        [req setHTTPMethod:@"GET"];
+        //设置请求超时为1分钟
+        [req setTimeoutInterval:60];
+        
+        NSError *error = nil;
+        
+        NSHTTPURLResponse * response = nil;
+        NSData   *data = [NSURLConnection sendSynchronousRequest:req
+                                               returningResponse:&response
+                                                           error:&error];
+        
+        //错误信息代码
+        int errorCode = error.code;
+        
+        if (errorCode == -1001) {
+            NSLog(@"网络连接超时，请确认是否已经连入网络。");
+            return;
+        }
+        
+        if (data != nil){
+            NSLog(@"response = %@",[NSHTTPURLResponse localizedStringForStatusCode: [response statusCode]]);
+            
+            NSString *jsonString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"返回信息为：%@",jsonString);
+            
+            if(![@"null" isEqual:jsonString]){
+                NSError *error;
+                NSDictionary *loginInfoDic = [NSJSONSerialization JSONObjectWithData:data
+                                                                             options:NSJSONReadingMutableContainers
+                                                                               error:&error];
+                NSDictionary *userInfo = [loginInfoDic objectForKey:@"Name"];
+                NSLog(@"用户信息为[姓名：%@]",userInfo);
+                
                 //登陆成功
                 //进入书架页面
                 ItemViewController *main=[[ItemViewController alloc]init];
                 [main passUserName:userName];
                 [self presentViewController:main animated:YES completion:nil];
                 
-//            }else{
-//                //登陆失败
-//                //···
-//            }
-//            
-//        }else {
-//            NSLog(@"%@", error);
-//        }
-//    }
+            }else{
+                //登陆失败
+                //···
+            }
+            
+        }else {
+            NSLog(@"%@", error);
+        }
+    }
 }
 
 #pragma mark - 注册按钮触发方法
 -(void)registerBtnPress
 {
-    
+    //进入注册页面
+    RegisterViewController *regVC=[[RegisterViewController alloc]init];
+    [self presentViewController:regVC animated:YES completion:nil];
 }
 
 #pragma mark - 提示信息

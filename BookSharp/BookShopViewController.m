@@ -55,7 +55,7 @@
 #pragma mark - 退出用户
 -(void)logout
 {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 

@@ -51,7 +51,7 @@
     
     //导航标题
     self.navigationItem.title=[self.userName stringByAppendingString:@"的书架1"];
-    //退出按钮
+//    //退出按钮
     UIBarButtonItem *logOut=[[UIBarButtonItem alloc]initWithTitle:@"退出" style:UIBarButtonItemStyleBordered target:self action:@selector(logout)];
     
     // 设置分页页数
@@ -128,7 +128,7 @@
 #pragma mark - 退出用户
 -(void)logout
 {
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 // 分页控制器触发事件

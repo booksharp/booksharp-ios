@@ -48,11 +48,30 @@
 
 
 //====================================================
-// iPhone---登录/注册视图的部分frame的定义
+// iPhone---登录视图的部分frame的定义
 //====================================================
 
 #define IMGVIEW_PRE_FRAME CGRectMake(30, 130, 260, 185)
 
+
+
+
+
+
+
+//====================================================
+// iPhone---注册视图的部分frame的定义
+//====================================================
+
+#define REG_TextField_X    70
+#define REG_TextField_Y    50
+#define REG_TextField_HEIGHT    30
+#define REG_TextField_WIDTH    200
+
+#define REG_BTN_X   70
+#define REG_BTN_Y   400
+#define REG_BTN_WIDTH     100
+#define REG_BTN_HEIGHT     30
 
 @interface ViewFrame : NSObject
 
